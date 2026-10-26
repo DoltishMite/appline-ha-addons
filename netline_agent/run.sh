@@ -22,4 +22,10 @@ if [ "$(cat /data/.connected 2>/dev/null || true)" != "${WANT}" ]; then
 fi
 
 bashio::log.info "Starting Netline Agent $("${AGENT}" status | head -n 1 | sed 's/^Netline Agent //')"
-exec "${AGENT}" run
+# ↻ Restart from Netline ends the agent with code 75: start it again; anything else ends the add-on
+while true; do
+    rc=0; "${AGENT}" run || rc=$?
+    [ "${rc}" -eq 75 ] || exit "${rc}"
+    bashio::log.info "Restarting (asked from Netline)..."
+    sleep 2
+done

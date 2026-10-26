@@ -24,7 +24,8 @@ It is the same program as Netline Agent on a computer (Windows, Mac, Linux), pac
   of Home Assistant's backups. It is never written to the log.
 - **Network access:** the add-on uses the host's network (it has to see your home network to scan and ping it) and the
   `NET_RAW` capability (for ping). It opens no ports.
-- **Updates** come as add-on updates here; the agent's own self-update is switched off inside the add-on.
+- **Updates** come as add-on updates here; the agent's own self-update is switched off inside the add-on, so Netline
+  offers no ⟳ Update for this node. **↻ Restart** in Netline's Nodes works: the agent starts again inside the add-on.
 - **Removing it:** uninstalling the add-on stops it. Its results stay in Netline; remove the node in Netline's **Nodes**
   if you don't want it listed.
 - **Wi-Fi details** aren't available from inside Home Assistant, so the Wi-Fi part has nothing to show.
