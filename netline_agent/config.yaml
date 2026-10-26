@@ -8,7 +8,6 @@ arch:
   - amd64
 init: false
 startup: services
-boot: auto
 # it scans and pings your home network, so it needs the host's network and raw sockets (ping)
 host_network: true
 privileged:
