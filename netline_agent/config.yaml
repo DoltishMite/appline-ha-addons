@@ -1,0 +1,21 @@
+name: Netline Agent
+version: "2.4.1"
+slug: netline_agent
+description: Makes Home Assistant a Netline node - devices on your network, connection health, speed tests and uptime checks
+url: https://github.com/DoltishMite/appline-ha-addons/tree/main/netline_agent
+arch:
+  - aarch64
+  - amd64
+init: false
+startup: services
+boot: auto
+# it scans and pings your home network, so it needs the host's network and raw sockets (ping)
+host_network: true
+privileged:
+  - NET_RAW
+options:
+  sync_code: null
+  name: Home Assistant
+schema:
+  sync_code: password
+  name: str(1,40)

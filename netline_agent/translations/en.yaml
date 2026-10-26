@@ -1,0 +1,7 @@
+configuration:
+  sync_code:
+    name: Sync code
+    description: Your sync code, from any of the apps (Settings > Sync > Show code). It stays in this add-on's settings.
+  name:
+    name: Name
+    description: What this node is called in Netline's Nodes.
