@@ -11,8 +11,8 @@ RUN apt-get update \
 # Netline Agent's Linux build, attached to this repository's release for this version, checked against its SHA-256
 RUN set -e; \
     case "${BUILD_ARCH}" in \
-      aarch64) file=NetlineAgent-linux-arm64; sum=d9a87afe7bf6a803fdfd54dc356c0f60ee85cc88682d4c42021b46d21fe80263 ;; \
-      amd64) file=NetlineAgent-linux-x64; sum=636eacdfc0f2383a8220d7c0a8616eb2bdb1a61b908fcaa590615c26a244b306 ;; \
+      aarch64) file=NetlineAgent-linux-arm64; sum=fb671b78bf00d67e106ca7463aa9b292c0aedf03b56fd91c25300de2f67c9be1 ;; \
+      amd64) file=NetlineAgent-linux-x64; sum=274807e85d09c99c893144e823ef7784546688a89bd24e0473e532f05141e608 ;; \
       *) echo "Unsupported architecture: ${BUILD_ARCH}"; exit 1 ;; \
     esac; \
     curl -fsSL -o /usr/local/bin/NetlineAgent "https://github.com/DoltishMite/appline-ha-addons/releases/download/netline-agent-${BUILD_VERSION}/${file}"; \

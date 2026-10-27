@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.6.3
+
+- ↻ Check now in Netline also looks again at what this node is allowed to do.
+
 ## 2.6.2
 
 - 🛡 Home Assistant updates from Netline: Core, the OS, the Supervisor and your add-ons, listed in Netline's Patches and installed when you pick them (a backup first for Core and add-ons). Needs the Supervisor's manager role, so the add-on's security rating shows a point lower. Switch 🛡 Patches off for this node in Netline if you'd rather it didn't.
