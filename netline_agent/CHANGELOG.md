@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.6.1
+
+- What you ask of it in Netline (a scan, a speed test, a restart) now starts within a second or two, not at the next minute.
+- Its menu lines in the log only show the parts that are switched on.
+
 ## 2.6.0
 
 - Netline offers only what this node can do: no Wi-Fi survey without Wi-Fi, and no 🛡 Patches (Home Assistant keeps itself up to date).
