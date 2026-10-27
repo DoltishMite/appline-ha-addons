@@ -1,5 +1,5 @@
 name: Netline Agent
-version: "2.6.4"
+version: "2.6.5"
 slug: netline_agent
 description: Makes Home Assistant a Netline node - devices on your network, connection health, speed tests and uptime checks
 url: https://github.com/DoltishMite/appline-ha-addons/tree/main/netline_agent

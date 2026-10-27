@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.6.5
+
+- ↺ In Netline's Patches, a held update can be let go of.
+- A restart of the host shows as done only once it has really started again.
+
 ## 2.6.4
 
 - ⟳ Update in Netline (or Netline Agent in its Patches list) asks Home Assistant to update this add-on. It uses Home Assistant's API for that (no change to the security rating).
