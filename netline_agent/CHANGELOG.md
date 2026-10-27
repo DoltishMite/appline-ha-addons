@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.6.0
+
+- Netline offers only what this node can do: no Wi-Fi survey without Wi-Fi, and no 🛡 Patches (Home Assistant keeps itself up to date).
+
 ## 2.5.3
 
 - Speed tests: download speeds are no longer sometimes far too high (data the system had already received was counted as instant).
