@@ -1,5 +1,5 @@
 name: Netline Agent
-version: "2.6.1"
+version: "2.6.2"
 slug: netline_agent
 description: Makes Home Assistant a Netline node - devices on your network, connection health, speed tests and uptime checks
 url: https://github.com/DoltishMite/appline-ha-addons/tree/main/netline_agent
@@ -12,6 +12,10 @@ startup: services
 host_network: true
 privileged:
   - NET_RAW
+# 🛡 Patches in Netline: it lists Home Assistant's updates (Core, OS, Supervisor, add-ons) and installs the ones you pick there,
+# through the Supervisor; that needs its manager role (Home Assistant shows the add-on's rating one point lower for it)
+hassio_api: true
+hassio_role: manager
 options:
   sync_code: null
   name: Home Assistant

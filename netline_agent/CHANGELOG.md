@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.6.2
+
+- 🛡 Home Assistant updates from Netline: Core, the OS, the Supervisor and your add-ons, listed in Netline's Patches and installed when you pick them (a backup first for Core and add-ons). Needs the Supervisor's manager role, so the add-on's security rating shows a point lower. Switch 🛡 Patches off for this node in Netline if you'd rather it didn't.
+- A restart of the host waits until nothing is updating, and can be scheduled.
+
 ## 2.6.1
 
 - What you ask of it in Netline (a scan, a speed test, a restart) now starts within a second or two, not at the next minute.
