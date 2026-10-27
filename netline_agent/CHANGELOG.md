@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.6.4
+
+- ⟳ Update in Netline (or Netline Agent in its Patches list) asks Home Assistant to update this add-on. It uses Home Assistant's API for that (no change to the security rating).
+
 ## 2.6.3
 
 - ↻ Check now in Netline also looks again at what this node is allowed to do.
