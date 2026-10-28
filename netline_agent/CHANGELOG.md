@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.6.8
+
+- Netline's 📱 Devices says what answers on each open port (the server and its version, a web page's title, a certificate's name).
+- (Antivirus in Netline's 🦠 Security is for Windows and Linux computers, not this add-on.)
+
 ## 2.6.7
 
 - A part you switched off in Netline stays off, even if Netline's switches briefly go missing from your synced data.
