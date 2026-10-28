@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.6.7
+
+- A part you switched off in Netline stays off, even if Netline's switches briefly go missing from your synced data.
+
 ## 2.6.6
 
 - Updating itself from Netline no longer leaves it showing "Updating" for up to 45 minutes when Home Assistant takes its time.
