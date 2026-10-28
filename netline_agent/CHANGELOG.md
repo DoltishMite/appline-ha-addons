@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.6.6
+
+- Updating itself from Netline no longer leaves it showing "Updating" for up to 45 minutes when Home Assistant takes its time.
+- If any part gets stuck, it restarts itself.
+
 ## 2.6.5
 
 - ↺ In Netline's Patches, a held update can be let go of.
