@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.6.10
+
+- Netline's Patches no longer sits on "Asked to look": a save that clashed with another one stopped it looking for Home Assistant's updates.
+- 📜 Log in Netline's Nodes shows this add-on's recent log (also in the add-on's Log tab, as before).
+
 ## 2.6.9
 
 - In Netline's Patches, an update Home Assistant no longer offers by the time it installs leaves the list instead of showing as a failure.
