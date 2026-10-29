@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.6.11
+
+- A Netline maintenance plan with updates switched off (one that only runs antivirus scans on other computers) no longer installs Home Assistant's updates.
+
 ## 2.6.10
 
 - Netline's Patches no longer sits on "Asked to look": a save that clashed with another one stopped it looking for Home Assistant's updates.
