@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.6.9
+
+- In Netline's Patches, an update Home Assistant no longer offers by the time it installs leaves the list instead of showing as a failure.
+
 ## 2.6.8
 
 - Netline's 📱 Devices says what answers on each open port (the server and its version, a web page's title, a certificate's name).
