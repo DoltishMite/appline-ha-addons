@@ -11,8 +11,8 @@ RUN apt-get update \
 # Wardyn Agent's Linux build, attached to this repository's release for this version, checked against its SHA-256
 RUN set -e; \
     case "${BUILD_ARCH}" in \
-      aarch64) file=NetlineAgent-linux-arm64; sum=12881e49be06906ff67f539b84af1b0fa95656173fb721bc688b616c8f8be472 ;; \
-      amd64) file=NetlineAgent-linux-x64; sum=1121f83f465e5757c80bb89c16a546a9cdda65d1e1501d5cc8c40b67e218bfa0 ;; \
+      aarch64) file=NetlineAgent-linux-arm64; sum=257eacf80ade1cde6c02e5c8fd553d5f1908c6b9d4810939a69dd402802547dd ;; \
+      amd64) file=NetlineAgent-linux-x64; sum=478ff16ab2fc838b8d5b6b0a1f788ea292c0566fe4eb92f5f2f2a3167534f7ec ;; \
       *) echo "Unsupported architecture: ${BUILD_ARCH}"; exit 1 ;; \
     esac; \
     curl -fsSL -o /usr/local/bin/NetlineAgent "https://github.com/DoltishMite/appline-ha-addons/releases/download/netline-agent-${BUILD_VERSION}/${file}"; \

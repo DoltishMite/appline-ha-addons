@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.9.0
+
+- 🤝 Sharing: can keep the networks you share in Wardyn up to date for the people you share them with, and carries out what their role allows.
+- ⇄ Can be handed over to someone you share with: it then reports to their account. (A change to this add-on's sync code option later sets it back.)
+
 ## 2.8.0
 
 - 🔍 Audit: Wardyn shows this Home Assistant’s host (system, disk, memory, processor) and its add-ons as its software.
