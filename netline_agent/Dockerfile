@@ -8,11 +8,11 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends libicu76 iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 
-# Netline Agent's Linux build, attached to this repository's release for this version, checked against its SHA-256
+# Wardyn Agent's Linux build, attached to this repository's release for this version, checked against its SHA-256
 RUN set -e; \
     case "${BUILD_ARCH}" in \
-      aarch64) file=NetlineAgent-linux-arm64; sum=eef7d0ae9c32fe3e8383158889c57bcfa23422ea9950362d45b8e6b03a52530d ;; \
-      amd64) file=NetlineAgent-linux-x64; sum=e0f2bea3ab154106bd3f9378d13a55bec299df1cfe21756e7ff1f2959e266cfd ;; \
+      aarch64) file=NetlineAgent-linux-arm64; sum=249dba64a3c6d90370f18ad4123b838b122ee1e1edf4707c80f21d8a86435f34 ;; \
+      amd64) file=NetlineAgent-linux-x64; sum=91ddd77820b7894d05c9e851616f3cd8e79b2569e39225b092f40b033bc0977d ;; \
       *) echo "Unsupported architecture: ${BUILD_ARCH}"; exit 1 ;; \
     esac; \
     curl -fsSL -o /usr/local/bin/NetlineAgent "https://github.com/DoltishMite/appline-ha-addons/releases/download/netline-agent-${BUILD_VERSION}/${file}"; \

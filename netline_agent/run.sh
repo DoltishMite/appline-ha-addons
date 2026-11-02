@@ -1,5 +1,5 @@
 #!/command/with-contenv bashio
-# Netline Agent, headless, with its settings in the add-on's /data (kept across updates and in backups).
+# Wardyn Agent, headless, with its settings in the add-on's /data (kept across updates and in backups).
 # Connects with the options' sync code and name when they change, then runs. The add-on is updated as a whole,
 # so the agent's own self-update is off (AGENT_NO_UPDATE).
 set -e
@@ -21,11 +21,11 @@ if [ "$(cat /data/.connected 2>/dev/null || true)" != "${WANT}" ]; then
     echo "${WANT}" > /data/.connected
 fi
 
-bashio::log.info "Starting Netline Agent $("${AGENT}" status | head -n 1 | sed 's/^Netline Agent //')"
-# ↻ Restart from Netline ends the agent with code 75: start it again; anything else ends the add-on
+bashio::log.info "Starting Wardyn Agent $("${AGENT}" status | head -n 1 | sed -E 's/^(Netline|Wardyn) Agent //')"
+# ↻ Restart from Wardyn ends the agent with code 75: start it again; anything else ends the add-on
 while true; do
     rc=0; "${AGENT}" run || rc=$?
     [ "${rc}" -eq 75 ] || exit "${rc}"
-    bashio::log.info "Restarting (asked from Netline)..."
+    bashio::log.info "Restarting (asked from Wardyn)..."
     sleep 2
 done

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.7.0
+
+- Netline Agent is now **Wardyn Agent**: Netline's network monitor became Wardyn, a site of its own at https://wardyn.hedgepig.uk. Same add-on, same settings and code; it shows in Wardyn's Nodes as before.
+
 ## 2.6.11
 
 - A Netline maintenance plan with updates switched off (one that only runs antivirus scans on other computers) no longer installs Home Assistant's updates.
