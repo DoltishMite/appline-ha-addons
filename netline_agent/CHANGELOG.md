@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.7.1
+
+- Wardyn's Patches lists your HACS updates too (integrations, cards and themes, marked "(HACS)"), and installs the ones you pick through Home Assistant. A HACS integration takes effect after Home Assistant restarts (it says so under Repairs).
+
 ## 2.7.0
 
 - Netline Agent is now **Wardyn Agent**: Netline's network monitor became Wardyn, a site of its own at https://wardyn.hedgepig.uk. Same add-on, same settings and code; it shows in Wardyn's Nodes as before.

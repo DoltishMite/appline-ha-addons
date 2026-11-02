@@ -20,7 +20,8 @@ It is the same program as Wardyn Agent on a computer (Windows, Mac, Linux), pack
 
 ## 🛡 Home Assistant updates from Wardyn
 
-In Wardyn's 🛡 Patches, this node lists Home Assistant's own updates: Core, the operating system, the Supervisor and your add-ons.
+In Wardyn's 🛡 Patches, this node lists Home Assistant's own updates: Core, the operating system, the Supervisor, your add-ons, and what HACS has downloaded (integrations, cards, themes; marked "(HACS)").
+An integration from HACS takes effect once Home Assistant restarts: it says so under Settings → Repairs (a Core update in the same install restarts it anyway).
 Pick some and press Install (or schedule them, or let a maintenance plan do it). It makes a backup before updating Core or an add-on,
 updates add-ons first and Core last, and restarts the host only when you ask (an OS update needs that to finish). It can also ask
 Home Assistant to update this add-on (⟳ Update on its card in Wardyn, or Wardyn Agent in its Patches list). To do this it has the Supervisor's manager role, which is why its security rating
