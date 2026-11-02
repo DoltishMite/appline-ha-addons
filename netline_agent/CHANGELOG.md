@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.8.0
+
+- 🔍 Audit: Wardyn shows this Home Assistant’s host (system, disk, memory, processor) and its add-ons as its software.
+- ✅ Checks: the checks Wardyn gives this node run here (disk space, memory, services, ports, websites, certificates…). Script checks only with the new **Allow script checks** option on.
+- Follows its group’s policy in Wardyn unless switched otherwise on its own card.
+
 ## 2.7.1
 
 - Wardyn's Patches lists your HACS updates too (integrations, cards and themes, marked "(HACS)"), and installs the ones you pick through Home Assistant. A HACS integration takes effect after Home Assistant restarts (it says so under Repairs).

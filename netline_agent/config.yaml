@@ -1,5 +1,5 @@
 name: Wardyn Agent
-version: "2.7.1"
+version: "2.8.0"
 slug: netline_agent
 description: Makes Home Assistant a Wardyn node - devices on your network, connection health, speed tests and uptime checks
 url: https://github.com/DoltishMite/appline-ha-addons/tree/main/netline_agent
@@ -22,6 +22,8 @@ homeassistant_api: true
 options:
   sync_code: null
   name: Home Assistant
+  allow_scripts: false
 schema:
   sync_code: password
   name: str(1,40)
+  allow_scripts: bool

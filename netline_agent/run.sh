@@ -10,6 +10,8 @@ export DOTNET_BUNDLE_EXTRACT_BASE_DIR=/tmp/netline
 AGENT=/usr/local/bin/NetlineAgent
 CODE="$(bashio::config 'sync_code')"
 NAME="$(bashio::config 'name')"
+# ✅ Wardyn's script checks run only when allowed here (2.8.0)
+if bashio::config.true 'allow_scripts'; then export AGENT_ALLOW_SCRIPTS=1; fi
 
 # only a fingerprint of the options is kept, never the code itself
 WANT="$(printf '%s|%s' "${CODE}" "${NAME}" | sha256sum | cut -c1-32)"

@@ -5,3 +5,6 @@ configuration:
   name:
     name: Name
     description: What this node is called in Wardyn's Nodes.
+  allow_scripts:
+    name: Allow script checks
+    description: Lets the script checks in your Wardyn library run here (inside this add-on, not as admin). Premade checks run either way.
