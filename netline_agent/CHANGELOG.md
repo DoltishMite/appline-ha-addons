@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.10.1
+
+- Shows its current version in Wardyn again after an update (it could keep showing the one before).
+
 ## 2.10.0
 
 - 🏠 Sends its state to Home Assistant for the Appline for HA integration (0.8.0): connected, updates waiting, restart needed, threats, failing checks, and the health of the networks it measures. On when Wardyn is ticked in your Home Assistant link.
