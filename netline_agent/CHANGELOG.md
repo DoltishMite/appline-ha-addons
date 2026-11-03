@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.16.1
+
+- ⚡ A speed test shows download, upload, latency, jitter and lag under load live in Wardyn as it runs.
+
 ## 2.16.0
 
 - ⚡ Live activity: what this node is doing (speed tests, scans, updates, checks, antivirus, audits) shows in Wardyn as it happens, and requests from people you share with are carried out within seconds.
