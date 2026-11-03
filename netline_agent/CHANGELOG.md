@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.14.0
+
+- 🏠 Home Assistant matches Wardyn: no old readings from parts that are switched off, and your dismissed issues and issue levels.
+
 ## 2.13.0
 
 - 🏠 Everything Wardyn shows and every setting, for Wardyn for HA 0.2: devices on your networks, router, latency, speed tests, checks, plans and settings, with switches, selects, numbers and buttons.
