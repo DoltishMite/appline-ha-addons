@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.13.0
+
+- 🏠 Everything Wardyn shows and every setting, for Wardyn for HA 0.2: devices on your networks, router, latency, speed tests, checks, plans and settings, with switches, selects, numbers and buttons.
+
 ## 2.12.0
 
 - ⏱ Follows Wardyn's outage thresholds (Settings → Issues → Thresholds): how long the internet must stop answering before it's an outage, and how slow a ping can be.
