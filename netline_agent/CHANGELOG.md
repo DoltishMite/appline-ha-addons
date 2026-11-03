@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.16.4
+
+- 🔍 Audits on Windows list Microsoft Store apps too (no change for the add-on itself).
+
 ## 2.16.3
 
 - 🛡 Check and plan changes from people you share with are merged in, never replacing your whole list.
