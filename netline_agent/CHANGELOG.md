@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.11.0
+
+- 🏠 Wardyn for HA: sends its state to Wardyn's own Home Assistant link (Wardyn → Settings → Home Assistant), and carries out its buttons (update, restart, install updates, checks, scans, speed tests) when Wardyn allows it.
+
 ## 2.10.1
 
 - Shows its current version in Wardyn again after an update (it could keep showing the one before).
