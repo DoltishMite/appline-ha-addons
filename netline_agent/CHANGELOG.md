@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.16.2
+
+- ⚡ A speed test you ask for runs for about 15 seconds (8 s each way) instead of being over in about 2 s on a fast line. Scheduled tests stay light on data.
+
 ## 2.16.1
 
 - ⚡ A speed test shows download, upload, latency, jitter and lag under load live in Wardyn as it runs.
