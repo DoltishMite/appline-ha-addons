@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.12.0
+
+- ⏱ Follows Wardyn's outage thresholds (Settings → Issues → Thresholds): how long the internet must stop answering before it's an outage, and how slow a ping can be.
+
 ## 2.11.0
 
 - 🏠 Wardyn for HA: sends its state to Wardyn's own Home Assistant link (Wardyn → Settings → Home Assistant), and carries out its buttons (update, restart, install updates, checks, scans, speed tests) when Wardyn allows it.
