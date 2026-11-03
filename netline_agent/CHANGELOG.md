@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.16.0
+
+- ⚡ Live activity: what this node is doing (speed tests, scans, updates, checks, antivirus, audits) shows in Wardyn as it happens, and requests from people you share with are carried out within seconds.
+
 ## 2.15.0
 
 - 🤝 Shared networks work like a teammate's: your issue levels, thresholds and dismissals go to the people you share with, Edit and Admin can dismiss issues, and they see your nodes as connected.
