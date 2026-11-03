@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.16.3
+
+- 🛡 Check and plan changes from people you share with are merged in, never replacing your whole list.
+
 ## 2.16.2
 
 - ⚡ A speed test you ask for runs for about 15 seconds (8 s each way) instead of being over in about 2 s on a fast line. Scheduled tests stay light on data.
