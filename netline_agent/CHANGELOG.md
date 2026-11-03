@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.10.0
+
+- 🏠 Sends its state to Home Assistant for the Appline for HA integration (0.8.0): connected, updates waiting, restart needed, threats, failing checks, and the health of the networks it measures. On when Wardyn is ticked in your Home Assistant link.
+
 ## 2.9.0
 
 - 🤝 Sharing: can keep the networks you share in Wardyn up to date for the people you share them with, and carries out what their role allows.
