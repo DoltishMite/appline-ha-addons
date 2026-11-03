@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.15.0
+
+- 🤝 Shared networks work like a teammate's: your issue levels, thresholds and dismissals go to the people you share with, Edit and Admin can dismiss issues, and they see your nodes as connected.
+
 ## 2.14.0
 
 - 🏠 Home Assistant matches Wardyn: no old readings from parts that are switched off, and your dismissed issues and issue levels.
