@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.17.0
+
+- 🗄 Reports straight to your Wardyn workspace on the server, which holds your networks' data and shows changes to everyone live.
+
 ## 2.16.6
 
 - 🤝 Shared networks work like one shared tenant: names, dismissals and settings are the same for everyone in the share.
