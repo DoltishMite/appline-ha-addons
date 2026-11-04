@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.16.5
+
+- 🤝 Shared networks carry their speed tests and speed settings.
+
 ## 2.16.4
 
 - 🔍 Audits on Windows list Microsoft Store apps too (no change for the add-on itself).
