@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.16.6
+
+- 🤝 Shared networks work like one shared tenant: names, dismissals and settings are the same for everyone in the share.
+
 ## 2.16.5
 
 - 🤝 Shared networks carry their speed tests and speed settings.
