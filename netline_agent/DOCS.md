@@ -10,7 +10,14 @@ around the clock, so Wardyn can:
 
 It is the same program as Wardyn Agent on a computer (Windows, Mac, Linux), packaged for Home Assistant.
 
-## Setup
+## Setup with your own Wardyn console
+
+1. In your console, open **Nodes > Add nodes** and make an enrolment token.
+2. Here, open **Configuration**: put the console's address (for example `http://192.168.1.20:8470`) in **Console address**
+   and the token in **Enrolment token**. Leave **Sync code** empty.
+3. **Save**, then **Start**. It joins the console and appears under **Nodes** within a minute.
+
+## Setup with hosted Wardyn
 
 1. In any of the apps, open **Settings > Sync > Show code** and copy your sync code.
 2. Here, open **Configuration**, paste it into **Sync code**, and give the node a **Name** if you like.
@@ -32,7 +39,7 @@ is a point lower. Switch 🛡 Patches off for this node in Wardyn (🖥 Nodes) i
 - **Your sync code** is kept in this add-on's settings and its data folder on your Home Assistant machine. Both are part
   of Home Assistant's backups. It is never written to the log.
 - **Network access:** the add-on uses the host's network (it has to see your home network to scan and ping it) and the
-  `NET_RAW` capability (for ping). It opens no ports.
+  `NET_RAW` capability (for ping). With a console it listens on port 8470, which sends you on to your console.
 - **Updates** come as add-on updates here; the agent's own self-update is switched off inside the add-on, so Wardyn
   offers no ⟳ Update for this node. **↻ Restart** in Wardyn's Nodes works: the agent starts again inside the add-on.
 - **Removing it:** uninstalling the add-on stops it. Its results stay in Wardyn; remove the node in Wardyn's **Nodes**

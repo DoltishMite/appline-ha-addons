@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.19.1
+
+- 🗄 Works with a Wardyn console of your own: put its address and an enrolment token in Configuration (no sync code needed).
+- 🚚 A node on hosted Wardyn can be moved to your own console from there.
+- 🌐 Its address on port 8470 opens your console.
+
 ## 2.17.0
 
 - 🗄 Reports straight to your Wardyn workspace on the server, which holds your networks' data and shows changes to everyone live.

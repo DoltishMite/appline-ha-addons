@@ -1,7 +1,13 @@
 configuration:
+  console_url:
+    name: Console address
+    description: Your own Wardyn console, for example http://192.168.1.20:8470. Leave empty to use a sync code instead.
+  enrol_token:
+    name: Enrolment token
+    description: From your console's Nodes > Add nodes. Used once to join; the node keeps its own key after that.
   sync_code:
     name: Sync code
-    description: Your sync code, from any of the apps (Settings > Sync > Show code). It stays in this add-on's settings.
+    description: For hosted Wardyn only (leave empty with a console). Your sync code, from any of the apps (Settings > Sync > Show code). It stays in this add-on's settings.
   name:
     name: Name
     description: What this node is called in Wardyn's Nodes.
