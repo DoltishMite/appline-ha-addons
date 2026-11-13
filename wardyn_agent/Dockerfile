@@ -11,13 +11,13 @@ RUN apt-get update \
 # Wardyn Agent's Linux build, attached to this repository's release for this version, checked against its SHA-256
 RUN set -e; \
     case "${BUILD_ARCH}" in \
-      aarch64) file=NetlineAgent-linux-arm64; sum=79ade59885c9baf7cee229051c72f429f4dc8fc25e56bd02e15f9a90d1c2a1cd ;; \
-      amd64) file=NetlineAgent-linux-x64; sum=eefcb414ec91a5ba0386ab8a3d1d6066875bd008f77fe911310899d856556a34 ;; \
+      aarch64) file=WardynAgent-linux-arm64; sum=54b936ada891f202175d80d6713f35a61f2d6e3b432447d9f20a96b41c3d7935 ;; \
+      amd64) file=WardynAgent-linux-x64; sum=ca7bdbd6172af148aa3f5911278ac108aba2c2123e32ede8e17d31f8c83e08f3 ;; \
       *) echo "Unsupported architecture: ${BUILD_ARCH}"; exit 1 ;; \
     esac; \
-    curl -fsSL -o /usr/local/bin/NetlineAgent "https://github.com/DoltishMite/appline-ha-addons/releases/download/netline-agent-${BUILD_VERSION}/${file}"; \
-    echo "${sum}  /usr/local/bin/NetlineAgent" | sha256sum -c -; \
-    chmod 755 /usr/local/bin/NetlineAgent
+    curl -fsSL -o /usr/local/bin/WardynAgent "https://github.com/DoltishMite/appline-ha-addons/releases/download/wardyn-agent-${BUILD_VERSION}/${file}"; \
+    echo "${sum}  /usr/local/bin/WardynAgent" | sha256sum -c -; \
+    chmod 755 /usr/local/bin/WardynAgent
 
 COPY run.sh /
 RUN chmod a+x /run.sh

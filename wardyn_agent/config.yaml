@@ -1,8 +1,9 @@
 name: Wardyn Agent
-version: "2.19.1"
+version: "3.0.0"
+# (its slug from before 3.0 stays: Home Assistant knows the installed add-on by it)
 slug: netline_agent
 description: Makes Home Assistant a Wardyn node - devices on your network, connection health, speed tests and uptime checks
-url: https://github.com/DoltishMite/appline-ha-addons/tree/main/netline_agent
+url: https://github.com/DoltishMite/appline-ha-addons/tree/main/wardyn_agent
 arch:
   - aarch64
   - amd64

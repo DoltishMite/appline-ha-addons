@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.0
+
+- 🛡 Everything is called Wardyn now: the program is Wardyn Agent throughout, and its saved settings move across by themselves on this update (the same node, nothing to set up again).
+- 🏠 Home Assistant gets Wardyn's devices, presence and status through Wardyn for HA only (no longer through Appline's link).
+
 ## 2.19.1
 
 - 🗄 Works with a Wardyn console of your own: put its address and an enrolment token in Configuration (no sync code needed).

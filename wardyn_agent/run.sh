@@ -5,9 +5,9 @@
 set -e
 export XDG_CONFIG_HOME=/data
 export AGENT_NO_UPDATE=1
-export DOTNET_BUNDLE_EXTRACT_BASE_DIR=/tmp/netline
+export DOTNET_BUNDLE_EXTRACT_BASE_DIR=/tmp/wardyn
 
-AGENT=/usr/local/bin/NetlineAgent
+AGENT=/usr/local/bin/WardynAgent
 CODE="$(bashio::config 'sync_code')"
 CONSOLE="$(bashio::config 'console_url')"
 ENROL="$(bashio::config 'enrol_token')"
@@ -34,7 +34,7 @@ if bashio::config.has_value 'sync_code' && ! bashio::config.has_value 'console_u
     echo "${WANT}" > /data/.connected
 fi
 
-bashio::log.info "Starting Wardyn Agent $("${AGENT}" status | head -n 1 | sed -E 's/^(Netline|Wardyn) Agent //')"
+bashio::log.info "Starting Wardyn Agent $("${AGENT}" status | head -n 1 | sed -E 's/^Wardyn Agent //')"
 # ↻ Restart from Wardyn ends the agent with code 75: start it again; anything else ends the add-on
 while true; do
     rc=0; "${AGENT}" run "${ARGS[@]}" || rc=$?

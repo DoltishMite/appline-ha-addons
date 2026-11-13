@@ -2,7 +2,7 @@
 
 | Add-on | What it does |
 |---|---|
-| [Wardyn Agent](netline_agent) | Makes Home Assistant a node for Wardyn: devices, connection health, speed tests and uptime checks from home |
+| [Wardyn Agent](wardyn_agent) | Makes Home Assistant a node for Wardyn: devices, connection health, speed tests and uptime checks from home |
 
 ## Install
 
@@ -17,6 +17,6 @@ For the sensors and panels, see [Appline for HA](https://github.com/DoltishMite/
 
 ## Releasing (maintainer)
 
-The add-on's version matches Wardyn Agent's. For a new one: attach `NetlineAgent-linux-arm64` and `NetlineAgent-linux-x64`
-to a release tagged `netline-agent-<version>`, put their SHA-256 in the Dockerfile, raise `version` in config.yaml and add
+The add-on's version matches Wardyn Agent's. For a new one: attach `WardynAgent-linux-arm64` and `WardynAgent-linux-x64`
+to a release tagged `wardyn-agent-<version>`, put their SHA-256 in the Dockerfile, raise `version` in config.yaml and add
 a CHANGELOG entry. The workflow builds the image for both architectures and runs the agent's self-test inside it.
